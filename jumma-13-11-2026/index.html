@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ta">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <title>நபி வழியில் ஜும்மா — 13.11.2026 — AJS Pernambut</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./assets/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;600;700;800&family=Mukta+Malar:wght@400;600;700;800&display=block" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="45.97" data-width="1080" data-height="1920">
+      <audio id="vo-hook" src="./assets/vo-hook.mp3" data-start="0.4" data-duration="3.19" data-volume="1.0" preload="auto"></audio>
+      <audio id="vo-m1" src="./assets/vo-m1.mp3" data-start="4.94" data-duration="5.72" data-volume="1.0" preload="auto"></audio>
+      <audio id="vo-m2" src="./assets/vo-m2.mp3" data-start="12.01" data-duration="5.46" data-volume="1.0" preload="auto"></audio>
+      <audio id="vo-m3" src="./assets/vo-m3.mp3" data-start="19.01" data-duration="6.82" data-volume="1.0" preload="auto"></audio>
+      <audio id="vo-m4" src="./assets/vo-m4.mp3" data-start="27.18" data-duration="5.8" data-volume="1.0" preload="auto"></audio>
+      <audio id="vo-outro" src="./assets/vo-outro.mp3" data-start="34.33" data-duration="9.64" data-volume="1.0" preload="auto"></audio>
+
+      <!-- Atmosphere layer (visible on text scenes only) -->
+      <div id="atmos" class="atmos">
+        <div id="orb-a" class="orb orb-a"></div>
+        <div id="orb-b" class="orb orb-b"></div>
+        <svg class="dome" viewBox="0 0 1080 520" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M240 520 V330 Q240 150 540 90 Q840 150 840 330 V520" fill="none" stroke="#d4af6a" stroke-width="3"/>
+          <path d="M540 90 V30" stroke="#d4af6a" stroke-width="3"/>
+          <rect x="90" y="200" width="46" height="320" fill="none" stroke="#d4af6a" stroke-width="3"/>
+          <rect x="944" y="200" width="46" height="320" fill="none" stroke="#d4af6a" stroke-width="3"/>
+        </svg>
+        <div class="grain"></div>
+      </div>
+
+      <!-- Scene 1: Hook -->
+      <section id="s-hook" class="scene">
+        <img id="hook-photo" class="photo" src="./assets/venue-mosque-real.jpg" alt="Masjid">
+        <div class="scrim"></div>
+        <div class="hook-top">
+          <div class="mask-box"><div class="rv salam-ar font-amiri shadow" dir="rtl">السَّلَامُ عَلَيْكُمْ</div></div>
+          <div class="mask-box"><div class="rv salam-ta font-tamil shadow">அஸ்ஸலாமு அலைக்கும்</div></div>
+        </div>
+        <div class="hook-bottom">
+          <div class="rv badge font-inter"><span>UPCOMING JUMMA</span><span>|</span><span class="date">13.11.2026</span></div>
+          <div class="mask-box"><h1 class="rv hero font-tamil shadow">நபி வழியில்<br><span>ஜும்மா</span></h1></div>
+        </div>
+      </section>
+
+      <!-- Masjid scenes 2–5 -->
+      <section id="s-m1" class="scene">
+        <img id="m1-photo" class="photo" src="./assets/topic-prophetic-governance.jpg" alt="அண்ணலாரின் அற்புத அரசியல்">
+        <div class="scrim"></div>
+        <div class="m-top">
+          <div class="mask-box"><div class="rv m-num font-inter shadow">MASJID 01 / 04</div></div>
+          <div class="mask-box"><div class="rv m-name font-tamil shadow">மஸ்ஜிதே முஹம்மதியா</div></div>
+          <div class="hairline"></div>
+        </div>
+        <div class="m-bottom">
+          <div class="portrait"><img class="pimg" src="./assets/speaker-1.png" alt="Speaker 1"></div>
+          <div class="mask-box"><div class="rv label font-tamil shadow">பேச்சாளர்</div></div>
+          <div class="mask-box"><div class="rv speaker font-tamil shadow">சகோ. கோவை பக்கீர் முஹம்மத்</div></div>
+          <div class="gap"></div>
+          <div class="mask-box"><div class="rv label font-tamil shadow">தலைப்பு</div></div>
+          <div class="mask-box"><div class="rv topic font-tamil shadow">அண்ணலாரின் அற்புத அரசியல்</div></div>
+        </div>
+      </section>
+      <section id="s-m2" class="scene">
+        <img id="m2-photo" class="photo" src="./assets/topic-day-of-judgement.jpg" alt="வியக்க வைக்கும் விசாரணை நாள்">
+        <div class="scrim"></div>
+        <div class="m-top">
+          <div class="mask-box"><div class="rv m-num font-inter shadow">MASJID 02 / 04</div></div>
+          <div class="mask-box"><div class="rv m-name font-tamil shadow">மஸ்ஜிதே தவ்ஹீத்</div></div>
+          <div class="hairline"></div>
+        </div>
+        <div class="m-bottom">
+          <div class="portrait"><img class="pimg" src="./assets/speaker-2.png" alt="Speaker 2"></div>
+          <div class="mask-box"><div class="rv label font-tamil shadow">பேச்சாளர்</div></div>
+          <div class="mask-box"><div class="rv speaker font-tamil shadow">சகோ. கோவை உமர்</div></div>
+          <div class="gap"></div>
+          <div class="mask-box"><div class="rv label font-tamil shadow">தலைப்பு</div></div>
+          <div class="mask-box"><div class="rv topic font-tamil shadow">வியக்க வைக்கும் விசாரணை நாள்</div></div>
+        </div>
+      </section>
+      <section id="s-m3" class="scene">
+        <img id="m3-photo" class="photo" src="./assets/topic-rain-blessings.jpg" alt="மழையை மையப்படுத்தி, சொல்லப்பட்ட செய்திகள்">
+        <div class="scrim"></div>
+        <div class="m-top">
+          <div class="mask-box"><div class="rv m-num font-inter shadow">MASJID 03 / 04</div></div>
+          <div class="mask-box"><div class="rv m-name font-tamil shadow">மஸ்ஜிதே ரஹ்மானியா</div></div>
+          <div class="hairline"></div>
+        </div>
+        <div class="m-bottom">
+          <div class="portrait"><img class="pimg" src="./assets/speaker-3.png" alt="Speaker 3"></div>
+          <div class="mask-box"><div class="rv label font-tamil shadow">பேச்சாளர்</div></div>
+          <div class="mask-box"><div class="rv speaker font-tamil shadow">மவ்லவி நாஸிர் உமரி</div></div>
+          <div class="gap"></div>
+          <div class="mask-box"><div class="rv label font-tamil shadow">தலைப்பு</div></div>
+          <div class="mask-box"><div class="rv topic font-tamil shadow">மழையை மையப்படுத்தி, சொல்லப்பட்ட செய்திகள்</div></div>
+        </div>
+      </section>
+      <section id="s-m4" class="scene">
+        <img id="m4-photo" class="photo" src="./assets/topic-hereafter.jpg" alt="மறுமையே நமது இலக்கு">
+        <div class="scrim"></div>
+        <div class="m-top">
+          <div class="mask-box"><div class="rv m-num font-inter shadow">MASJID 04 / 04</div></div>
+          <div class="mask-box"><div class="rv m-name font-tamil shadow">மஸ்ஜிதே ஹபீப்</div></div>
+          <div class="hairline"></div>
+        </div>
+        <div class="m-bottom">
+          <div class="portrait"><img class="pimg" src="./assets/speaker-4.png" alt="Speaker 4"></div>
+          <div class="mask-box"><div class="rv label font-tamil shadow">பேச்சாளர்</div></div>
+          <div class="mask-box"><div class="rv speaker font-tamil shadow">மவ்லவி அபூ அலிஃப் பாதுஷா</div></div>
+          <div class="gap"></div>
+          <div class="mask-box"><div class="rv label font-tamil shadow">தலைப்பு</div></div>
+          <div class="mask-box"><div class="rv topic font-tamil shadow">மறுமையே நமது இலக்கு</div></div>
+        </div>
+      </section>
+
+      <!-- Scene 6: Outro -->
+      <section id="s-outro" class="scene outro">
+        <div class="o-wrap center">
+          <div class="mask-box"><div class="rv bang-label font-tamil">பாங்கு</div></div>
+          <div class="mask-box"><div class="rv bang-time font-inter">12.55</div></div>
+          <div class="rv women font-tamil">பெண்களுக்கு தனி இட வசதி செய்யப்பட்டுள்ளது</div>
+          <div class="mask-box"><div class="rv invite font-tamil">அன்புடன் அழைக்கிறது</div></div>
+          <img class="rv logo" src="./assets/ajs-logo.png" alt="AJS Logo">
+          <div class="mask-box"><div class="rv org font-tamil">அல் ஜம்யதுஸ் ஸலப்பியா</div></div>
+          <div class="hairline"></div>
+          <div class="mask-box"><div class="rv place font-tamil">பேர்ணாம்பட்டு</div></div>
+        </div>
+      </section>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

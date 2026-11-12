@@ -1,0 +1,711 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 330 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/muaz/projects/07-ajs-media/01-teast-01/jumma-bayan/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 9,
+    "findings": [
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 1.944,
+        "selector": "div.reveal-el.assalam-text",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 257.47,
+          "top": 764.84,
+          "right": 822.52,
+          "bottom": 860.7,
+          "width": 565.05,
+          "height": 95.86
+        },
+        "containerSelector": "#scene-1 > div:nth-of-type(1)",
+        "text": "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ",
+        "fixHint": "Text is 565px x 96px inside 593px x 90px and overflows by up to 8px; increase the container height to at least ~98px or shrink font-size from 56px to ~53px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 243.47,
+          "top": 772.7,
+          "right": 836.52,
+          "bottom": 863.09,
+          "width": 593.05,
+          "height": 90.39
+        },
+        "overflow": {
+          "top": 7.86
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 257.47,
+          "y": 764.84,
+          "width": 565.05,
+          "height": 95.86
+        },
+        "firstSeen": 1.944,
+        "lastSeen": 1.944,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.944
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 1.944,
+        "selector": "div.reveal-el.bismillah-text",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 304.88,
+          "top": 871.12,
+          "right": 775.11,
+          "bottom": 1009.71,
+          "width": 470.23,
+          "height": 138.59
+        },
+        "containerSelector": "#scene-1 > div:nth-of-type(2)",
+        "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+        "fixHint": "Text is 470px x 139px inside 498px x 107px and overflows by up to 17px; increase the container height to at least ~139px or shrink font-size from 68px to ~53px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 290.88,
+          "top": 888.09,
+          "right": 789.11,
+          "bottom": 995.28,
+          "width": 498.23,
+          "height": 107.19
+        },
+        "overflow": {
+          "top": 16.97,
+          "bottom": 14.43
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 304.88,
+          "y": 871.12,
+          "width": 470.23,
+          "height": 138.59
+        },
+        "firstSeen": 1.944,
+        "lastSeen": 1.944,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.944
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 5.833,
+        "selector": "span.gold-accent",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 332.06,
+          "top": 962.82,
+          "right": 747.94,
+          "bottom": 1094.82,
+          "width": 415.88,
+          "height": 132
+        },
+        "containerSelector": "#scene-2 > div:nth-of-type(2)",
+        "text": "Bayan",
+        "fixHint": "Text is 416px x 132px inside 504px x 306px and overflows by up to 4px; increase the container height to at least ~310px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 287.98,
+          "top": 784.5,
+          "right": 792.02,
+          "bottom": 1090.5,
+          "width": 504.03,
+          "height": 306
+        },
+        "overflow": {
+          "bottom": 4.32
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 332.06,
+          "y": 962.82,
+          "width": 415.88,
+          "height": 132
+        },
+        "firstSeen": 5.833,
+        "lastSeen": 5.833,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.833
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 9.722,
+        "selector": "#scene-2 > div:nth-of-type(1) > div:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 369.31,
+          "top": 739.5,
+          "right": 710.69,
+          "bottom": 763.5,
+          "width": 341.38,
+          "height": 24
+        },
+        "containerSelector": "div.speaker-photo-border",
+        "text": "SPECIAL GATHERING",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 0,
+          "end": 35
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 369.31,
+          "y": 739.5,
+          "width": 341.38,
+          "height": 24
+        },
+        "firstSeen": 9.722,
+        "lastSeen": 9.722,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.722
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 9.722,
+        "selector": "h1.reveal-el.title-hero",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 301.98,
+          "top": 778.5,
+          "right": 778.02,
+          "bottom": 948.5,
+          "width": 476.03,
+          "height": 170
+        },
+        "containerSelector": "div.speaker-photo-border",
+        "text": "Jumma",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.78,
+        "lifetime": {
+          "start": 0,
+          "end": 35
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 301.98,
+          "y": 778.5,
+          "width": 476.03,
+          "height": 170
+        },
+        "firstSeen": 9.722,
+        "lastSeen": 9.722,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.722
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 9.722,
+        "selector": "span.gold-accent",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 332.06,
+          "top": 925.5,
+          "right": 747.94,
+          "bottom": 1095.5,
+          "width": 415.88,
+          "height": 170
+        },
+        "containerSelector": "div.speaker-photo-border",
+        "text": "Bayan",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 0,
+          "end": 35
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 332.06,
+          "y": 925.5,
+          "width": 415.88,
+          "height": 170
+        },
+        "firstSeen": 9.722,
+        "lastSeen": 9.722,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.722
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 9.722,
+        "selector": "#scene-3 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 405.64,
+          "top": 1199.58,
+          "right": 674.36,
+          "bottom": 1215.58,
+          "width": 268.72,
+          "height": 16
+        },
+        "containerSelector": "#scene-3 > div:nth-of-type(2)",
+        "text": "GUEST SPEAKER",
+        "fixHint": "Text is 269px x 16px inside 297px x 36px and overflows by up to 3px; increase the container height to at least ~39px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 391.64,
+          "top": 1177,
+          "right": 688.36,
+          "bottom": 1213,
+          "width": 296.72,
+          "height": 36
+        },
+        "overflow": {
+          "bottom": 2.58
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 405.64,
+          "y": 1199.58,
+          "width": 268.72,
+          "height": 16
+        },
+        "firstSeen": 9.722,
+        "lastSeen": 9.722,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.722
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 9.722,
+        "selector": "#scene-3 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 405.64,
+          "top": 1195.58,
+          "right": 674.36,
+          "bottom": 1219.58,
+          "width": 268.72,
+          "height": 24
+        },
+        "containerSelector": "#scene-3 > div:nth-of-type(2)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 391.64,
+          "top": 1177,
+          "right": 688.36,
+          "bottom": 1213,
+          "width": 296.72,
+          "height": 36
+        },
+        "overflow": {
+          "bottom": 6.58
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 405.64,
+          "y": 1195.58,
+          "width": 268.72,
+          "height": 24
+        },
+        "firstSeen": 9.722,
+        "lastSeen": 9.722,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.722
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 21.389,
+        "selector": "div.venue-img-frame",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 201,
+          "top": 644,
+          "right": 879,
+          "bottom": 1858.75,
+          "width": 678,
+          "height": 1214.75
+        },
+        "containerSelector": "#venue-img-box",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 200,
+          "top": 643,
+          "right": 880,
+          "bottom": 1043,
+          "width": 680,
+          "height": 400
+        },
+        "overflow": {
+          "bottom": 815.75
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 201,
+          "y": 644,
+          "width": 678,
+          "height": 1214.75
+        },
+        "firstSeen": 21.389,
+        "lastSeen": 21.389,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          21.389
+        ]
+      }
+    ],
+    "duration": 35,
+    "samples": [
+      1.944,
+      5.833,
+      9.722,
+      13.611,
+      17.5,
+      21.389,
+      25.278,
+      29.167,
+      33.056
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 9,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 3.1:1; WCAG AA requires 4.5:1.",
+        "text": "SPECIAL GATHERING",
+        "fg": "rgb(197,160,89)",
+        "bg": "rgb(119,71,62)",
+        "ratio": 3.1,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(219,197,153)",
+        "large": false,
+        "selector": "div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 369.3125,
+          "y": 739.5,
+          "width": 341.375,
+          "height": 24
+        },
+        "time": 9.722,
+        "times": [
+          9.722
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.9:1; WCAG AA requires 3:1.",
+        "text": "JummaBayan",
+        "fg": "rgb(247,245,240)",
+        "bg": "rgb(213,169,176)",
+        "ratio": 1.9,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(97,96,94)",
+        "large": true,
+        "selector": "div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > h1",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 301.984375,
+          "y": 790.5,
+          "width": 476.03125,
+          "height": 294
+        },
+        "time": 9.722,
+        "times": [
+          9.722
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.78:1; WCAG AA requires 3:1.",
+        "text": "Bayan",
+        "fg": "rgb(197,160,89)",
+        "bg": "rgb(229,215,228)",
+        "ratio": 1.78,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(148,120,67)",
+        "large": true,
+        "selector": "div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > h1 > span",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 332.0625,
+          "y": 925.5,
+          "width": 415.875,
+          "height": 170
+        },
+        "time": 9.722,
+        "times": [
+          9.722
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      1.944,
+      9.722,
+      17.5,
+      25.278,
+      33.056
+    ],
+    "checked": 22,
+    "passed": 19
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "first_frame_empty",
+        "severity": "warning",
+        "message": "Frame 0 is covered by div.bg-base: an opaque element over the canvas hides every other clip, and the first frame is the thumbnail on social players. Move it below the content; see canvas_covered.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 13 text elements stay under it for 0.5 s or more, the smallest \"COMING JUMMA\" at 20 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "COMING JUMMA",
+        "selector": "div.intro-badges-row > div:nth-of-type(1) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 306.41,
+          "y": 1105.79,
+          "width": 263.06,
+          "height": 24
+        },
+        "time": 1.75,
+        "times": [
+          1.75,
+          5,
+          6.25,
+          9.75,
+          14.75,
+          16,
+          20,
+          20.25,
+          20.5,
+          21.25,
+          25.25,
+          30,
+          31.375
+        ],
+        "fontPx": 20,
+        "floorPx": 28,
+        "seconds": 3.25,
+        "elements": [
+          {
+            "selector": "div.intro-badges-row > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "COMING JUMMA",
+            "fontPx": 20,
+            "time": 1.75,
+            "seconds": 3.25
+          },
+          {
+            "selector": "#scene-2 > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "SPECIAL GATHERING",
+            "fontPx": 20,
+            "time": 5,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-3 > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "GUEST SPEAKER",
+            "fontPx": 20,
+            "time": 9.75,
+            "seconds": 5
+          },
+          {
+            "selector": "#scene-4 > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "BAYAN TOPIC",
+            "fontPx": 20,
+            "time": 14.75,
+            "seconds": 5
+          },
+          {
+            "selector": "div.reveal-el.date-meta-day",
+            "text": "FRIDAY",
+            "fontPx": 20,
+            "time": 20.25,
+            "seconds": 5
+          },
+          {
+            "selector": "div.venue-side > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "VENUE",
+            "fontPx": 20,
+            "time": 20.5,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-6 > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "CORDIALLY INVITED BY",
+            "fontPx": 20,
+            "time": 25.25,
+            "seconds": 4.875
+          },
+          {
+            "selector": "#scene-7 > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "CLOSING",
+            "fontPx": 20,
+            "time": 30,
+            "seconds": 5
+          },
+          {
+            "selector": "div.reveal-el.sub-intro-label",
+            "text": "FRIDAY DISCOURSE & GUIDANCE",
+            "fontPx": 22,
+            "time": 6.25,
+            "seconds": 3.5
+          },
+          {
+            "selector": "div.reveal-el.date-meta-month",
+            "text": "NOVEMBER 2026",
+            "fontPx": 22,
+            "time": 20,
+            "seconds": 5.25
+          },
+          {
+            "selector": "div.reveal-el.venue-city",
+            "text": "Pernambut",
+            "fontPx": 22,
+            "time": 21.25,
+            "seconds": 4
+          },
+          {
+            "selector": "div.reveal-el.closing-sub",
+            "text": "Brothers & Sisters · All Are Welcome",
+            "fontPx": 24,
+            "time": 31.375,
+            "seconds": 3.625
+          },
+          {
+            "selector": "div.reveal-el.topic-subtext",
+            "text": "Nurturing Faith, Character & Islamic Values in the Modern Age",
+            "fontPx": 26,
+            "time": 16,
+            "seconds": 3.75
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 280
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

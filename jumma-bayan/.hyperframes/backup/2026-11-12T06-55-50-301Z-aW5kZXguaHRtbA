@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ta">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <title>13.11.2026 Jumma Bayan - AJS Pernambut</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./assets/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700;800&family=Mukta+Malar:wght@400;600;700;800&display=block" rel="stylesheet">
+  </head>
+  <body>
+    <div data-hf-id="hf-h8ra" id="root" class="clip" data-composition-id="main" data-start="0" data-duration="40.5" data-width="1080" data-height="1920">
+      <audio data-hf-id="hf-oyyr" id="bgm" src="./assets/spiritual-bgm-40s.mp3" data-start="0" data-duration="40.5" data-volume="0.004266" data-fade-in="1.5" data-fade-out="2.8" preload="auto"></audio>
+      <audio data-hf-id="hf-61nk" id="vo-hook" src="./assets/vo-hook.mp3" data-start="0.3" data-duration="4.01" data-volume="1.0" preload="auto"></audio>
+      <audio data-hf-id="hf-khcn" id="vo-m1-spk" src="./assets/vo-m1-speaker.mp3" data-start="4.8" data-duration="4.35" data-volume="1.0" preload="auto"></audio>
+      <audio data-hf-id="hf-mu8l" id="vo-m1-top" src="./assets/vo-m1-topic.mp3" data-start="9.4" data-duration="2.26" data-volume="1.0" preload="auto"></audio>
+      <audio data-hf-id="hf-otel" id="vo-m2-spk" src="./assets/vo-m2-speaker.mp3" data-start="12.3" data-duration="3.34" data-volume="1.0" preload="auto"></audio>
+      <audio data-hf-id="hf-v04x" id="vo-m2-top" src="./assets/vo-m2-topic.mp3" data-start="16.0" data-duration="2.88" data-volume="1.0" preload="auto"></audio>
+      <audio data-hf-id="hf-7ciq" id="vo-m3-spk" src="./assets/vo-m3-speaker.mp3" data-start="19.4" data-duration="3.80" data-volume="1.0" preload="auto"></audio>
+      <audio data-hf-id="hf-6j30" id="vo-m3-top" src="./assets/vo-m3-topic.mp3" data-start="23.6" data-duration="2.67" data-volume="1.0" preload="auto"></audio>
+      <audio data-hf-id="hf-stj9" id="vo-m4-spk" src="./assets/vo-m4-speaker.mp3" data-start="26.7" data-duration="3.80" data-volume="1.0" preload="auto"></audio>
+      <audio data-hf-id="hf-ib3a" id="vo-m4-top" src="./assets/vo-m4-topic.mp3" data-start="30.8" data-duration="3.20" data-volume="1.0" preload="auto"></audio>
+      <audio data-hf-id="hf-7yd6" id="vo-outro" src="./assets/vo-outro.mp3" data-start="34.0" data-duration="6.05" data-volume="1.0" preload="auto"></audio>
+      <div data-hf-id="hf-qixq" id="camera-rig" class="camera-rig">
+        <div data-hf-id="hf-7v19" class="bg-base"></div>
+        <img data-hf-id="hf-ne9z" src="./assets/bg-dome-cinematic.jpg" class="bg-dome-img" alt="Atmospheric dome">
+        <div data-hf-id="hf-d3f5" class="light-orb orb-primary" id="orb-1"></div>
+        <div data-hf-id="hf-m662" class="light-orb orb-accent" id="orb-2"></div>
+        <div data-hf-id="hf-7wk0" class="light-orb orb-center" id="orb-3"></div>
+        <div data-hf-id="hf-6dar" class="dome-container">
+          <svg data-hf-id="hf-6qdr" class="dome-svg" viewBox="0 0 1080 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <defs data-hf-id="hf-mh0t">
+              <lineargradient data-hf-id="hf-zxsb" id="domeStrokeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop data-hf-id="hf-2ksb" offset="0%" stop-color="#C5A059" stop-opacity="0.35" />
+                <stop data-hf-id="hf-z0l8" offset="60%" stop-color="#C5A059" stop-opacity="0.12" />
+                <stop data-hf-id="hf-mgdg" offset="100%" stop-color="#C5A059" stop-opacity="0" />
+              </lineargradient>
+              <lineargradient data-hf-id="hf-ck9a" id="rayGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+                <stop data-hf-id="hf-cie3" offset="0%" stop-color="#C5A059" stop-opacity="0.08" />
+                <stop data-hf-id="hf-bc4c" offset="100%" stop-color="#C5A059" stop-opacity="0" />
+              </lineargradient>
+            </defs>
+            <polygon data-hf-id="hf-wt7k" points="540,110 200,400 880,400" fill="url(#rayGrad)" />
+            <path data-hf-id="hf-kyf9" d="M 60,400 L 320,400 C 320,260 420,130 540,110 C 660,130 760,260 760,400 L 1020,400" fill="none" stroke="url(#domeStrokeGrad)" stroke-width="1.2" />
+            <line data-hf-id="hf-x01c" x1="540" y1="85" x2="540" y2="110" stroke="#C5A059" stroke-width="1.2" stroke-opacity="0.4" />
+          </svg>
+        </div>
+        <svg data-hf-id="hf-1jhj" class="film-grain" xmlns="http://www.w3.org/2000/svg">
+          <filter data-hf-id="hf-xd64" id="noiseFilter">
+            <feturbulence data-hf-id="hf-2yt5" type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+            <fecolormatrix data-hf-id="hf-j6ag" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.05 0" />
+          </filter>
+          <rect data-hf-id="hf-3bax" width="100%" height="100%" filter="url(#noiseFilter)" />
+        </svg>
+        <div data-hf-id="hf-qkdk" class="bg-vignette"></div>
+      </div>
+      <div data-hf-id="hf-0mhr" class="persistent-header">
+        <span data-hf-id="hf-06hz" class="gold-pill-tag">ஜும்மா சிறப்பு பயான்</span>
+        <span data-hf-id="hf-ekg9" class="header-date">13.11.2026 · வெள்ளிக்கிழமை</span>
+      </div>
+      <div data-hf-id="hf-ncuk" class="stage-container">
+        <div data-hf-id="hf-cxck" id="scene-hook" class="scene fullscreen-topic-scene">
+          <img data-hf-id="hf-icav" src="./assets/venue-mosque-real.jpg" class="fullscreen-bg-img" alt="Masjid Atmosphere">
+          <div data-hf-id="hf-q17p" class="fullscreen-gradient-scrim"></div>
+          <div data-hf-id="hf-huve" class="hook-content-overlay">
+            <div data-hf-id="hf-2f2h" class="mask-box arabic-wrap">
+              <div data-hf-id="hf-4zjd" class="reveal-el assalam-text font-amiri" dir="rtl">
+                السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ
+              </div>
+            </div>
+            <div data-hf-id="hf-i7hk" class="mask-box" style="margin-top: 14px;">
+              <div data-hf-id="hf-2njd" class="reveal-el salam-tamil font-tamil">
+                அஸ்ஸலாமு அலைக்கும்
+              </div>
+            </div>
+            <div data-hf-id="hf-tfiq" class="hairline-box">
+              <div data-hf-id="hf-qvjv" class="gold-hairline" id="hairline-1"></div>
+            </div>
+            <div data-hf-id="hf-gmqt" class="upcoming-jumma-badge-box">
+              <span data-hf-id="hf-32qc" class="upcoming-label font-inter">UPCOMING JUMMA</span>
+              <span data-hf-id="hf-6r8y" class="upcoming-date font-inter">13.11.2026</span>
+            </div>
+            <div data-hf-id="hf-isb4" class="mask-box" style="margin-top: 25px;">
+              <h1 data-hf-id="hf-vp29" class="reveal-el title-hero font-tamil">
+                நபி வழியில் <span data-hf-id="hf-43no" class="gold-accent">ஜும்மா</span>
+              </h1>
+            </div>
+            <div data-hf-id="hf-syct" class="intro-badges-row" style="margin-top: 35px;">
+              <div data-hf-id="hf-h1ig" class="mask-box">
+                <div data-hf-id="hf-qqyv" class="reveal-el label-text">பேர்ணாம்பட்டு மஸ்ஜித்கள்</div>
+              </div>
+              <div data-hf-id="hf-aslf" class="mask-dot">·</div>
+              <div data-hf-id="hf-o8o0" class="mask-box">
+                <div data-hf-id="hf-qab0" class="reveal-el label-text gold-accent">பாங்கு: 12.55 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hf-id="hf-6x5t" id="scene-m1-speaker" class="scene">
+          <div data-hf-id="hf-naw0" class="venue-tag-badge">
+            <span data-hf-id="hf-212u" class="venue-num font-inter">01</span>
+            <span data-hf-id="hf-kqcp" class="venue-name font-tamil">மஸ்ஜிதே முஹம்மதியா</span>
+          </div>
+          <div data-hf-id="hf-jkeu" class="hairline-box">
+            <div data-hf-id="hf-72f8" class="gold-hairline" id="hairline-m1"></div>
+          </div>
+          <div data-hf-id="hf-7txk" class="speaker-large-card">
+            <div data-hf-id="hf-19pv" class="card-khatheeb-label font-tamil">பேச்சாளர்</div>
+            <div data-hf-id="hf-5mbg" class="mask-box" style="margin-top: 18px;">
+              <div data-hf-id="hf-wd3y" class="reveal-el speaker-name font-tamil">
+                சகோ. கோவை பக்கீர் முஹம்மத்
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hf-id="hf-918p" id="scene-m1-topic" class="scene fullscreen-topic-scene">
+          <img data-hf-id="hf-b93v" src="./assets/topic-prophetic-jumma.jpg" class="fullscreen-bg-img" alt="நபி வழியில் ஜும்மா">
+          <div data-hf-id="hf-dkvt" class="fullscreen-gradient-scrim"></div>
+          <div data-hf-id="hf-s6z4" class="topic-glass-container">
+            <div data-hf-id="hf-v2ky" class="topic-venue-crumb font-tamil">
+              01 · மஸ்ஜிதே முஹம்மதியா · சகோ. கோவை பக்கீர் முஹம்மத்
+            </div>
+            <div data-hf-id="hf-2d9w" class="mask-box" style="margin-top: 18px;">
+              <div data-hf-id="hf-itkl" class="reveal-el topic-fullscreen-hero font-tamil">
+                “நபி வழியில் ஜும்மா”
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hf-id="hf-ksdu" id="scene-m2-speaker" class="scene">
+          <div data-hf-id="hf-gna0" class="venue-tag-badge">
+            <span data-hf-id="hf-2fdv" class="venue-num font-inter">02</span>
+            <span data-hf-id="hf-n1sw" class="venue-name font-tamil">மஸ்ஜிதே தவ்ஹீத்</span>
+          </div>
+          <div data-hf-id="hf-jypv" class="hairline-box">
+            <div data-hf-id="hf-fqb3" class="gold-hairline" id="hairline-m2"></div>
+          </div>
+          <div data-hf-id="hf-mzeo" class="speaker-large-card">
+            <div data-hf-id="hf-pi37" class="card-khatheeb-label font-tamil">பேச்சாளர்</div>
+            <div data-hf-id="hf-16ct" class="mask-box" style="margin-top: 18px;">
+              <div data-hf-id="hf-6tka" class="reveal-el speaker-name font-tamil">
+                சகோ. கோவை உமர்
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hf-id="hf-i9e6" id="scene-m2-topic" class="scene fullscreen-topic-scene">
+          <img data-hf-id="hf-ig7a" src="./assets/topic-prophetic-governance.jpg" class="fullscreen-bg-img" alt="அண்ணலாரின் அற்புத அரசியல்">
+          <div data-hf-id="hf-ersw" class="fullscreen-gradient-scrim"></div>
+          <div data-hf-id="hf-ire0" class="topic-glass-container">
+            <div data-hf-id="hf-hq1k" class="topic-venue-crumb font-tamil">
+              02 · மஸ்ஜிதே தவ்ஹீத் · சகோ. கோவை உமர்
+            </div>
+            <div data-hf-id="hf-1knu" class="mask-box" style="margin-top: 18px;">
+              <div data-hf-id="hf-g5bg" class="reveal-el topic-fullscreen-hero font-tamil">
+                “அண்ணலாரின் அற்புத அரசியல்”
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hf-id="hf-04lz" id="scene-m3-speaker" class="scene">
+          <div data-hf-id="hf-fgcx" class="venue-tag-badge">
+            <span data-hf-id="hf-2tow" class="venue-num font-inter">03</span>
+            <span data-hf-id="hf-ivkf" class="venue-name font-tamil">மஸ்ஜிதே ரஹ்மானியா</span>
+          </div>
+          <div data-hf-id="hf-kd0w" class="hairline-box">
+            <div data-hf-id="hf-bs72" class="gold-hairline" id="hairline-m3"></div>
+          </div>
+          <div data-hf-id="hf-jfkc" class="speaker-avatar-wrap">
+            <div data-hf-id="hf-de56" class="speaker-avatar-border">
+              <img data-hf-id="hf-2k4p" src="./assets/speaker-nasir.png" class="speaker-img" alt="Moulavi Nasir Umari">
+            </div>
+          </div>
+          <div data-hf-id="hf-hmls" class="speaker-large-card" style="margin-top: 25px;">
+            <div data-hf-id="hf-p3s6" class="card-khatheeb-label font-tamil">பேச்சாளர்</div>
+            <div data-hf-id="hf-rty8" class="mask-box" style="margin-top: 14px;">
+              <div data-hf-id="hf-l15x" class="reveal-el speaker-name font-tamil">
+                மவ்லவி நாஸிர் உமரி
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hf-id="hf-tvrz" id="scene-m3-topic" class="scene fullscreen-topic-scene">
+          <img data-hf-id="hf-lh4f" src="./assets/topic-day-of-judgement.jpg" class="fullscreen-bg-img" alt="வியக்க வைக்கும் விசாரணை நாள்">
+          <div data-hf-id="hf-edhv" class="fullscreen-gradient-scrim"></div>
+          <div data-hf-id="hf-hkgx" class="topic-glass-container">
+            <div data-hf-id="hf-z777" class="topic-venue-crumb font-tamil">
+              03 · மஸ்ஜிதே ரஹ்மானியா · மவ்லவி நாஸிர் உமரி
+            </div>
+            <div data-hf-id="hf-3k6z" class="mask-box" style="margin-top: 18px;">
+              <div data-hf-id="hf-4amq" class="reveal-el topic-fullscreen-hero font-tamil">
+                “வியக்க வைக்கும் விசாரணை நாள்”
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hf-id="hf-1dr4" id="scene-m4-speaker" class="scene">
+          <div data-hf-id="hf-funy" class="venue-tag-badge">
+            <span data-hf-id="hf-01jp" class="venue-num font-inter">04</span>
+            <span data-hf-id="hf-tu50" class="venue-name font-tamil">மஸ்ஜிதே ஹபீப்</span>
+          </div>
+          <div data-hf-id="hf-hkvp" class="hairline-box">
+            <div data-hf-id="hf-kg2x" class="gold-hairline" id="hairline-m4"></div>
+          </div>
+          <div data-hf-id="hf-lshl" class="speaker-large-card">
+            <div data-hf-id="hf-oph5" class="card-khatheeb-label font-tamil">பேச்சாளர்</div>
+            <div data-hf-id="hf-3yi0" class="mask-box" style="margin-top: 18px;">
+              <div data-hf-id="hf-nmtm" class="reveal-el speaker-name font-tamil">
+                மவ்லவி அபூ அலிஃப் பாதுஷா
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hf-id="hf-fpj8" id="scene-m4-topic" class="scene fullscreen-topic-scene">
+          <img data-hf-id="hf-tidr" src="./assets/topic-rain-blessings.jpg" class="fullscreen-bg-img" alt="மழையை மையப்படுத்தி சொல்லப்பட்ட செய்திகள்">
+          <div data-hf-id="hf-cdyq" class="fullscreen-gradient-scrim"></div>
+          <div data-hf-id="hf-hyry" class="topic-glass-container">
+            <div data-hf-id="hf-7yc2" class="topic-venue-crumb font-tamil">
+              04 · மஸ்ஜிதே ஹபீப் · மவ்லவி அபூ அலிஃப் பாதுஷா
+            </div>
+            <div data-hf-id="hf-2rkx" class="mask-box" style="margin-top: 18px;">
+              <div data-hf-id="hf-mbje" class="reveal-el topic-fullscreen-hero font-tamil" style="font-size: 52px; line-height: 1.35;">
+                “மழையை மையப்படுத்தி,<br data-hf-id="hf-x5px">சொல்லப்பட்ட செய்திகள்”
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hf-id="hf-80wg" id="scene-outro" class="scene">
+          <div data-hf-id="hf-m987" class="logo-box" id="ajs-logo-box">
+            <div data-hf-id="hf-tm9d" class="logo-glow"></div>
+            <img data-hf-id="hf-fbl5" src="./assets/ajs-logo.png" class="ajs-logo-img" alt="Al Jamiathus Salafiyya Pernambut">
+          </div>
+          <div data-hf-id="hf-vqj3" class="motto-pill font-tamil">
+            “மறுமையே நமது இலக்கு”
+          </div>
+          <div data-hf-id="hf-xgt8" class="important-info-grid">
+            <div data-hf-id="hf-s5px" class="info-cell">
+              <div data-hf-id="hf-tryi" class="info-label font-inter">ATHAN / பாங்கு</div>
+              <div data-hf-id="hf-24i5" class="info-val font-inter gold-accent">12.55 PM</div>
+            </div>
+            <div data-hf-id="hf-hkoo" class="info-divider"></div>
+            <div data-hf-id="hf-bk15" class="info-cell">
+              <div data-hf-id="hf-9trl" class="info-label font-inter">FACILITY / வசதி</div>
+              <div data-hf-id="hf-850q" class="info-val font-tamil">பெண்களுக்கு தனி இட வசதி</div>
+            </div>
+          </div>
+          <div data-hf-id="hf-sb6h" class="mask-box" style="margin-top: 40px;">
+            <div data-hf-id="hf-hbax" class="reveal-el org-invite-label font-tamil">அன்புடன் அழைக்கிறது</div>
+          </div>
+          <div data-hf-id="hf-hz6q" class="hairline-box">
+            <div data-hf-id="hf-byyz" class="gold-hairline" id="hairline-outro"></div>
+          </div>
+          <div data-hf-id="hf-n1qx" class="mask-box">
+            <div data-hf-id="hf-d3na" class="reveal-el org-name-hero font-tamil">
+              அல் ஜம்யதுஸ் ஸலப்பியா
+            </div>
+          </div>
+          <div data-hf-id="hf-tush" class="mask-box" style="margin-top: 8px;">
+            <div data-hf-id="hf-5bzh" class="reveal-el org-city font-tamil gold-accent">
+              பேர்ணாம்பட்டு
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
