@@ -436,15 +436,14 @@
   },
   "snapshots": {
     "latest": {
-      "revision": "bc62a5d7-578d-47d7-9fe5-91901be13598",
-      "id": "875cb404-354b-4a28-9a9f-17782870a364-3"
+      "revision": null,
+      "id": "d14ea6da-a6e8-41f2-85f1-948477332f28-0"
     },
     "revisions": {
       "46c1308d-b319-416b-92df-29f8f40f4b14": [
         {
           "scope": "full",
           "id": "0e600fdd-a03d-4610-bb53-b67d58dbebf6-0",
-          "image": "/home/muaz/projects/07-ajs-media/01-teast-01/jumma-13-11-2026/.hyperframes/artifacts/snapshots/32217033-4332-4417-b1f0-444857e0552b/frame-00-at-9s.png",
           "time": 9,
           "metadata": {
             "width": 1080,
@@ -459,12 +458,13 @@
           "revision": "46c1308d-b319-416b-92df-29f8f40f4b14",
           "inputFingerprint": "8720f837eeb018193b146b64c240aeb1f327f867f50d8fe2fccf160f8d88c175",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45a661c0-a8b2-44e8-ba8a-ee5aeed829e8"
         },
         {
           "scope": "full",
           "id": "0e600fdd-a03d-4610-bb53-b67d58dbebf6-1",
-          "image": "/home/muaz/projects/07-ajs-media/01-teast-01/jumma-13-11-2026/.hyperframes/artifacts/snapshots/32217033-4332-4417-b1f0-444857e0552b/frame-01-at-16.5s.png",
           "time": 16.5,
           "metadata": {
             "width": 1080,
@@ -479,12 +479,13 @@
           "revision": "46c1308d-b319-416b-92df-29f8f40f4b14",
           "inputFingerprint": "8720f837eeb018193b146b64c240aeb1f327f867f50d8fe2fccf160f8d88c175",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45a661c0-a8b2-44e8-ba8a-ee5aeed829e8"
         },
         {
           "scope": "full",
           "id": "0e600fdd-a03d-4610-bb53-b67d58dbebf6-2",
-          "image": "/home/muaz/projects/07-ajs-media/01-teast-01/jumma-13-11-2026/.hyperframes/artifacts/snapshots/32217033-4332-4417-b1f0-444857e0552b/frame-02-at-24s.png",
           "time": 24,
           "metadata": {
             "width": 1080,
@@ -499,12 +500,13 @@
           "revision": "46c1308d-b319-416b-92df-29f8f40f4b14",
           "inputFingerprint": "8720f837eeb018193b146b64c240aeb1f327f867f50d8fe2fccf160f8d88c175",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45a661c0-a8b2-44e8-ba8a-ee5aeed829e8"
         },
         {
           "scope": "full",
           "id": "0e600fdd-a03d-4610-bb53-b67d58dbebf6-3",
-          "image": "/home/muaz/projects/07-ajs-media/01-teast-01/jumma-13-11-2026/.hyperframes/artifacts/snapshots/32217033-4332-4417-b1f0-444857e0552b/frame-03-at-32s.png",
           "time": 32,
           "metadata": {
             "width": 1080,
@@ -519,12 +521,13 @@
           "revision": "46c1308d-b319-416b-92df-29f8f40f4b14",
           "inputFingerprint": "8720f837eeb018193b146b64c240aeb1f327f867f50d8fe2fccf160f8d88c175",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45a661c0-a8b2-44e8-ba8a-ee5aeed829e8"
         },
         {
           "scope": "full",
           "id": "0e600fdd-a03d-4610-bb53-b67d58dbebf6-4",
-          "image": "/home/muaz/projects/07-ajs-media/01-teast-01/jumma-13-11-2026/.hyperframes/artifacts/snapshots/32217033-4332-4417-b1f0-444857e0552b/frame-04-at-42.75s.png",
           "time": 42.75,
           "metadata": {
             "width": 1080,
@@ -539,14 +542,15 @@
           "revision": "46c1308d-b319-416b-92df-29f8f40f4b14",
           "inputFingerprint": "8720f837eeb018193b146b64c240aeb1f327f867f50d8fe2fccf160f8d88c175",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45a661c0-a8b2-44e8-ba8a-ee5aeed829e8"
         }
       ],
       "bc62a5d7-578d-47d7-9fe5-91901be13598": [
         {
           "scope": "full",
           "id": "875cb404-354b-4a28-9a9f-17782870a364-0",
-          "image": "/home/muaz/projects/07-ajs-media/01-teast-01/jumma-13-11-2026/.hyperframes/artifacts/snapshots/b269dc5f-b906-4511-83d3-a4cccca6477d/frame-00-at-9s.png",
           "time": 9,
           "metadata": {
             "width": 1080,
@@ -561,12 +565,13 @@
           "revision": "bc62a5d7-578d-47d7-9fe5-91901be13598",
           "inputFingerprint": "420ef80e59d3139f2fd29f957dc26c015d2aa4d26ff8c34314c3cb8389baaccd",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45a661c0-a8b2-44e8-ba8a-ee5aeed829e8"
         },
         {
           "scope": "full",
           "id": "875cb404-354b-4a28-9a9f-17782870a364-1",
-          "image": "/home/muaz/projects/07-ajs-media/01-teast-01/jumma-13-11-2026/.hyperframes/artifacts/snapshots/b269dc5f-b906-4511-83d3-a4cccca6477d/frame-01-at-16.5s.png",
           "time": 16.5,
           "metadata": {
             "width": 1080,
@@ -581,12 +586,13 @@
           "revision": "bc62a5d7-578d-47d7-9fe5-91901be13598",
           "inputFingerprint": "420ef80e59d3139f2fd29f957dc26c015d2aa4d26ff8c34314c3cb8389baaccd",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45a661c0-a8b2-44e8-ba8a-ee5aeed829e8"
         },
         {
           "scope": "full",
           "id": "875cb404-354b-4a28-9a9f-17782870a364-2",
-          "image": "/home/muaz/projects/07-ajs-media/01-teast-01/jumma-13-11-2026/.hyperframes/artifacts/snapshots/b269dc5f-b906-4511-83d3-a4cccca6477d/frame-02-at-32s.png",
           "time": 32,
           "metadata": {
             "width": 1080,
@@ -601,12 +607,13 @@
           "revision": "bc62a5d7-578d-47d7-9fe5-91901be13598",
           "inputFingerprint": "420ef80e59d3139f2fd29f957dc26c015d2aa4d26ff8c34314c3cb8389baaccd",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45a661c0-a8b2-44e8-ba8a-ee5aeed829e8"
         },
         {
           "scope": "full",
           "id": "875cb404-354b-4a28-9a9f-17782870a364-3",
-          "image": "/home/muaz/projects/07-ajs-media/01-teast-01/jumma-13-11-2026/.hyperframes/artifacts/snapshots/b269dc5f-b906-4511-83d3-a4cccca6477d/frame-03-at-42.75s.png",
           "time": 42.75,
           "metadata": {
             "width": 1080,
@@ -621,7 +628,9 @@
           "revision": "bc62a5d7-578d-47d7-9fe5-91901be13598",
           "inputFingerprint": "420ef80e59d3139f2fd29f957dc26c015d2aa4d26ff8c34314c3cb8389baaccd",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45a661c0-a8b2-44e8-ba8a-ee5aeed829e8"
         }
       ]
     },
@@ -767,5 +776,18 @@
         "attribution": "unversioned"
       }
     ]
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "45a661c0-a8b2-44e8-ba8a-ee5aeed829e8",
+      "completedAt": 1794582179944,
+      "output": "/home/muaz/projects/07-ajs-media/01-teast-01/jumma-13-11-2026/output/jumma-13-11-2026-1080x1920.mp4",
+      "status": "completed",
+      "revision": "876c1f5e-bb14-49f4-86f4-3bdf2fb963c5"
+    },
+    "retainedRevisions": [
+      "876c1f5e-bb14-49f4-86f4-3bdf2fb963c5"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }

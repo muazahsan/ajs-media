@@ -48,6 +48,10 @@ Collect these before writing any code. Ask the user for anything missing in **on
 - **Target duration** (default: 25–35s)
 - **Languages** on screen (Tamil / English / Arabic)
 - **Assets available**: speaker photo, logo, venue photo
+- **Number of speakers / venues** (multi-masjid Jumma lists are common)
+
+> [!IMPORTANT]
+> If the user replies "go ahead" without answering everything, state the defaults you will use in **one line** (e.g. "Vertical 1080×1920, ~45s, Tamil + Arabic Salam, midnight + gold, names-only") before building.
 
 ---
 
@@ -55,7 +59,8 @@ Collect these before writing any code. Ask the user for anything missing in **on
 
 1. **Directory naming**: `<topic>-<DD-MM-YYYY>`, where the date is the **event date** (e.g. `jumma-13-11-2026`). Never put loose files in the workspace root.
 2. **Assets** (in `./assets/`):
-   - Search the workspace first for existing `speaker.png`, `logo.png`, `venue-*.jpg`.
+   - Search the workspace first for existing `speaker.png`, `logo.png`, `venue-*.jpg`. Also check sibling folders (e.g. `../asj-img/`, `../*-img/`), earlier project `assets/` folders (reuse topic images), and `~/Pictures` / `~/Downloads`.
+   - **Verify images visually** (build a contact sheet) — never trust filenames (e.g. `-v2` may be the *worse* version).
    - Opening venue photo: use a real venue/mosque photo if available. Otherwise generate one with `image-generator`, or ask the user.
    - Bundle GSAP locally at `./assets/gsap.min.js` (no CDN).
 3. **Root sizing**: set `data-width`, `data-height`, `data-duration` on `<div id="root">`.
@@ -79,6 +84,18 @@ Collect these before writing any code. Ask the user for anything missing in **on
 - Topic label: `தலைப்பு` — no generic "SPECIAL TOPIC" badges
 
 For other event types, adapt the badge and labels (e.g. `RAMADAN SPECIAL BAYAN`, `EID MUBARAK`).
+
+### Built-in Template: Multi-Masjid Jumma (several venues)
+- Scenes: Hook → one **Masjid card** per venue → Outro. ~7s per venue (≈ 45s for 4 venues).
+- Masjid card: full-bleed topic photo + push-in; top: `MASJID 01 / 04` counter + masjid name + hairline; lower third: (portrait) → `பேச்சாளர்` + name → `தலைப்பு` + topic.
+- Outro: பாங்கு time (large, accent color), facilities note (e.g. women's area) as a soft pill, `அன்புடன் அழைக்கிறது`, logo, organizer + place.
+- Generate repeated scene markup with a small script so all cards stay identical.
+
+### Speaker Photos
+- Use portraits **only if every speaker has one**; otherwise show names only for all (avoids implied ranking).
+- Prefer background-removed PNG, ≥ 800px, front-facing, no headset mic.
+- Style: 300px circle, gold ring, `object-fit: cover; object-position: 50% 12%`, `back.out` pop-in ~0.5s after the scene starts.
+- Copy into `assets/speaker-1.png … speaker-N.png` in venue order.
 
 ---
 
@@ -144,21 +161,34 @@ For other event types, adapt the badge and labels (e.g. `RAMADAN SPECIAL BAYAN`,
    - Speaker: place → title → name (*"இடம் மஸ்ஜிதே…, பேச்சாளர் மவ்லவி…"*)
    - Topic: *"தலைப்பு, …"*
    - Outro: timing + organizer invitation
-   - Show the script to the user before generating TTS.
-2. **Voice**: warm, deep, authoritative male. Default is Edge TTS `ta-IN-ValluvarNeural`, pitch `-5Hz` to `-6Hz`. If unavailable, use the best available Tamil neural voice and tell the user.
+   - **Always show the script and get approval before generating TTS — even if the user says "just add audio".** Offer a quick draft → approve step.
+   - Write numbers as Tamil words (12.55 → `பன்னிரண்டு ஐம்பத்தைந்து`). Keep the script in `audio-src/script.json`.
+   - Ask the user to check Arabic-origin words (ஜும்மா, மஸ்ஜிதே, மவ்லவி) — TTS often mispronounces them.
+2. **Voice options** (present to the user, best → basic). Target: warm, deep, authoritative male.
+   1. **Human recording** (best) — phone, quiet room, ~20cm; then post-process below.
+   2. **Sarvam AI Bulbul v3** — best Indian-language TTS. `POST https://api.sarvam.ai/text-to-speech`, header `api-subscription-key`, body `{text, target_language_code:"ta-IN", speaker, model:"bulbul:v3", pace:0.95, speech_sample_rate:44100}` → base64 WAV in `audios[]`. `bulbul:v2` is **deprecated**; v3 has no `pitch` param. Good Tamil male voices: `anand`, `vijay`, `gokul`, `mani`.
+   3. **ElevenLabs** multilingual v2/v3 — very natural, paid.
+   4. **Google Cloud TTS Chirp 3 HD** (ta-IN) — free quota.
+   5. **Edge TTS** `ta-IN-ValluvarNeural`, pitch `-5Hz`/`-6Hz` — free, no key, more robotic.
+   - Always generate **voice samples** (same line, 3–4 voices) in `audio-src/samples/` for the user to pick.
+   - **API keys**: store in a git-ignored `<project>/.env`, never in code; suggest rotating any key pasted in chat.
 3. **Voice post-processing** (FFmpeg):
    ```
    silenceremove=start_periods=1:start_threshold=-45dB,
+   areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,
    equalizer=f=110:width_type=o:width=1.2:g=5.5,
    equalizer=f=2800:width_type=o:width=1.0:g=2.0,
-   acompressor=threshold=-12dB:ratio=3:attack=10:release=120
+   acompressor=threshold=-12dB:ratio=3:attack=10:release=120,
+   loudnorm=I=-16:TP=-1.5:LRA=11
    ```
 4. **Retiming (voice drives timing)**:
-   - Measure each clip's duration.
+   - Measure each clip's duration. Formula: `scene = max(min, 0.4 lead + clip + 0.5 gap + 0.45 exit)` (min 7s venue cards, 4.5s hook); outro = `0.4 + clip + 2.0`. Voice `data-start` = scene start + 0.4.
+   - Automate with a script that rewrites the scene table in `main.js`, the `<audio>` tags, and root `data-duration`.
    - Each clip must end **0.3–0.8s before** its scene's exit transition begins.
    - If a clip is too long: first extend the scene hold (update the GSAP timeline + root `data-duration`), then shorten the script. Never overlap lines across scenes.
    - Re-run lint + snapshots after retiming.
-5. **BGM**: ambient, spiritual, non-instrumental/nasheed-style preferred (ask the user if unsure about instruments). Loop seamlessly, 1.5s fade-in, 2.8s fade-out, volume `0.20–0.22` under voice.
+5. **Background — let the user choose**: (A) vocal-only nasheed humming, (B) voice only + soft whooshes on transitions, (C) voice only.
+   **BGM**: ambient, spiritual, non-instrumental/nasheed-style preferred (ask the user if unsure about instruments). Loop seamlessly, 1.5s fade-in, 2.8s fade-out, volume `0.20–0.22` under voice.
 6. Preview again and get user sign-off on the mix.
 
 ---
@@ -173,11 +203,13 @@ For other event types, adapt the badge and labels (e.g. `RAMADAN SPECIAL BAYAN`,
 ---
 
 ## Quick Checklist
-- [ ] Intake complete, nothing guessed
+- [ ] Intake complete, nothing guessed (defaults stated in one line)
+- [ ] Images verified visually; speaker photos for all-or-none
 - [ ] Folder `<topic>-<DD-MM-YYYY>` (event date)
 - [ ] No green backgrounds; text ≥ 28px; Arabic padded
 - [ ] Religious text verified or flagged
 - [ ] Lint clean, snapshots reviewed
 - [ ] **Silent preview approved before any audio**
+- [ ] Script approved before TTS; voice samples offered; API key in `.env`
 - [ ] Voice retimed with no overlaps; BGM ducked
 - [ ] Final MP4 rendered and QA'd
