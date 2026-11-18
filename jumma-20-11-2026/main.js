@@ -5,10 +5,10 @@ const tl = gsap.timeline({ paused: true });
 const SCENES = [
   { id: 's-hook',  start: 0.00,  duration: 4.50,  photo: 'hook-photo' },
   { id: 's-m1',    start: 4.50,  duration: 8.48,  photo: 'm1-photo' },
-  { id: 's-m2',    start: 12.98, duration: 7.00,  photo: 'm2-photo' },
-  { id: 's-m3',    start: 19.98, duration: 8.38,  photo: 'm3-photo' },
-  { id: 's-m4',    start: 28.36, duration: 11.50, photo: 'm4-photo' },
-  { id: 's-outro', start: 39.86, duration: 8.45,  photo: 'outro-photo' }
+  { id: 's-m2',    start: 12.98, duration: 8.26,  photo: 'm2-photo' },
+  { id: 's-m3',    start: 21.24, duration: 8.38,  photo: 'm3-photo' },
+  { id: 's-m4',    start: 29.62, duration: 11.50, photo: 'm4-photo' },
+  { id: 's-outro', start: 41.12, duration: 8.45,  photo: 'outro-photo' }
 ];
 
 SCENES.forEach((sc, idx) => {
